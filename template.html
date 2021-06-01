@@ -1,0 +1,186 @@
+<!-- From https://gist.github.com/sitiaish/51c33b13d2efb9c4a63b6c918b282dab -->
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Data story with flourish</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="how-to-make-a-story">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #1d1d1d;
+    }
+
+    .font-secondary {
+      font-family: 'Lora', serif !important;
+    }
+
+    .text-h2 {
+      font-size: 36px;
+      line-height: 52px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 32px;
+        line-height: 48px;
+      }
+    }
+
+    .text-h3 {
+      font-size: 32px;
+      line-height: 36px;
+      font-weight: 500;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+
+    .text-body-1 {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    .text-body-2 {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .blockquote {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 36px;
+      text-transform: uppercase;
+      text-align: center;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 28px;
+      }  
+    }
+
+    .text-caption {
+      font-size: 14px;
+      line-height: 22px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 12px;
+        line-height: 18px; 
+      }
+    }
+
+    .text-overline {
+      font-size: 10px;
+      line-height: 16px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 10px;
+        line-height: 16px; 
+      }
+    }
+
+    a, li > a {
+      color: #E9E2DA !important;
+      border-bottom: 2px solid #E9E2DA;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .container.landing {
+      padding: 96px 0;
+    }
+
+    /* Style for flourish iframe */
+    iframe.flourish-iframe {
+      width: 100%;
+      height: auto;
+      border: unset;
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    /* @media (min-width: @screen-sm-min) { ... } */
+
+    /* Medium devices (desktops, 992px and up) */
+    /* @media (min-width: @screen-md-min) { ... } */
+
+    /* Large devices (large desktops, 1200px and up) */
+    /* @media (min-width: @screen-lg-min) { ... } */
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="container landing">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-11">
+          <p class="text-body-2 mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem iusto, vel, cum est architecto odit quia culpa sed ex ipsa praesentium alias ullam tempore numquam aliquid aspernatur, provident nesciunt!
+          </p>
+
+          <img src="https://picsum.photos/640/280" alt="placeholder" width=100% class="mb-5 py-2" />          
+
+          <h3 class="text-h3 font-secondary mb-3">Title here</h3>  
+
+          <!-- We put the script at the bottom so that we don't have to repeat it -->
+          <div class="flourish-embed flourish-chart mt-3" data-src="visualisation/6262784">
+          </div>
+          <p class="text-caption mb-5 text-center">caption: here is a flourish chart and I basically plonked this in here exactly like how I get from the embed instructions</p>
+
+          <!-- You can also embed it like this with an iframe with our own class (in this case we are using flourish-iframe) -->
+          <iframe class="flourish-iframe mt-3" src="https://flo.uri.sh/visualisation/6262784/embed?auto=1"></iframe>
+          <p class="text-caption mb-5 text-center">caption: here is a flourish chart that I embed using an iframe</p>
+
+          <p class="text-body-2 mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aut, cum reprehenderit obcaecati minima eius aperiam dolorem laboriosam ullam facere eaque earum voluptatibus, doloremque officiis quibusdam quae impedit ipsa sunt.
+          </p> 
+
+          <hr class="line-divider my-5 py-lg-2" />
+
+          <p class="blockquote font-secondary ">
+            “Block quote example”
+          </p>
+
+          <hr class="line-divider my-5 py-lg-2" />           
+
+          <p class="text-body-2 mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam architecto obcaecati alias delectus, illo non nam ad, accusamus magnam <em>italics here</em> <a href="" target="_blank">random link here</a> ipsa accusantium ratione praesentium dolores nesciunt ab officia quisquam excepturi sunt?
+          </p>
+
+          <img src="https://picsum.photos/640/280" alt="placeholder" width=100% class="mb-5 py-2" />
+
+          <h3 class="text-h3 font-secondary mb-3">Title here</h3>
+
+          <p class="text-body-2 mb-4">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dolor, quos aut repellendus quia porro temporibus magni unde, rerum quasi aperiam, eligendi ducimus aliquam fugiat quas autem labore id consectetur.
+          </p>         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+</body>
+</html>
