@@ -1,10 +1,14 @@
+<!-- Scrolling llama and css based on 
+  https://medium.com/kontinentalist/so-you-want-to-code-a-data-story-42c73443fa3
+-->
+
 <!doctype html>
 <html class="no-js" lang="">
 <head>
   <meta charset="utf-8">
   <title>Why is bee taxonomy important</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="how-to-make-a-story">
+  <meta name="description" content="why-bee-taxonomy-is-important">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
@@ -13,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+  <link rel="stylesheet" href="css/scroll.css">
 
   <style>
     body {
@@ -125,35 +131,54 @@
 
     /* Large devices (large desktops, 1200px and up) */
     /* @media (min-width: @screen-lg-min) { ... } */
+
+
+
   </style>
 </head>
+
+
 <body>
   <div id="root">
     <div class="container landing">
       <div class="row justify-content-center">
+
+        <!-- Introduction -->
         <div class="col-lg-7 col-11">
 
+          
           <p class="text-body-2 mb-5">
-            Bzz... Hey there!
+            Bzz... Hey there! This is best viewed on a desktop.
           </p>
 
           <img src="img/bee/header.png" alt="placeholder" width=100% class="mb-5 py-2" />          
+
+
 
           <h2 class="text-h2 font-secondary mb-3">Why is bee taxonomy important</h2>  
            
           <p class="text-body-2 mb-4">
             Taxonomy is the <a href="https://www.cbd.int/gti/taxonomy.shtml" target="_blank">science of describing and identifying species</a>. Without which, it could be difficult to put a name to an agricultural pest or disease-bearing mosquito vector – clearly these have important implications! Bees are arguably the world’s <a href="https://www.nature.com/articles/nature20588" target="_blank">most important pollinator group</a>, crucial to food security and ecosystem stability. In recent times, there have been reports on <a href="https://www.pnas.org/content/118/2/e2023989118" target="_blank">insect declines in some parts of the world</a>, whether this is true globally for the bee pollinators has yet to be ascertained, due to the lack of credible data of species over time. Furthermore, many insect species have not yet been discovered but are yet are under threat from <a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2002.2246" target="_blank">change and habitat loss</a>; the race is on to discover as many species as possible before they disappear.
-            </p>
-            <p class="text-body-2 mb-4">
-            One important taxonomic initiative led by John S. Ascher is databasing and georeferencing of bee types specimens. Georeferencing is the process of assigning a latitude and longitude to each type locality. The type locality is where the <a href="http://museum.wa.gov.au/explore/blogs/museumcollections/what-type-specimen" target="_blank">type specimen</a> is found, and the type specimen is assigned to each scientific name when a species is formally named. Here is a map of the unique type localities for bees over time. It gives us an idea of where species were discovered over time. The earliest bee species were described by the Swede <a href="https://ucmp.berkeley.edu/history/linnaeus.html" target="_blank">Carl Linnaeus</a>, also known as the father of taxonomy in 1758. Among these was the Western Honeybee (<em>Apis mellifera</em>), perhaps the most well-known of all honey bees due their use for the production of honey. 
-          </p> 
+          </p>
 
+          <p class="text-body-2 mb-4">
+            One important taxonomic initiative led by John S. Ascher is databasing and georeferencing of bee types specimens. Georeferencing is the process of assigning a latitude and longitude to each type locality. The type locality is where the <a href="http://museum.wa.gov.au/explore/blogs/museumcollections/what-type-specimen" target="_blank">type specimen</a> is found, and the type specimen is assigned to each scientific name when a species is formally named. Here is a map of the unique type localities for bees over time. It gives us an idea of where species were discovered over time. The earliest bee species were described by the Swede <a href="https://ucmp.berkeley.edu/history/linnaeus.html" target="_blank">Carl Linnaeus</a>, also known as the father of taxonomy in 1758. Among these was the Western Honeybee (<em>Apis mellifera</em>), perhaps the most well-known of all honey bees due their use for the production of honey. 
+            
+          </p> 
+        </div>
+
+        <!-- Map -->
+        <div class="col-lg-9 col-11">
           <div class="flourish-embed flourish-map mt-3" data-src="visualisation/5599921">
           </div>
           <p class="text-caption mb-5 text-center">
             Unique localities of georeferenced bees over time
           </p>
-
+        </div>
+       
+        <!-- Chapter 1 -->
+        <div class="col-lg-7 col-11">
+          
           <hr class="line-divider my-5 py-lg-2" />
 
           <h3 class="text-h3 font-secondary mb-3">
@@ -206,11 +231,14 @@
             <p class="text-body-3 mb-2">
               To explore the rise of part-time PTEs over time, the PTEs were segregated by the total number of species described during their active years and the proportion of PTEs describing a range of one to ten species during their active years was tabulated. 
           </p>
+        </div>
 
-
+        <!-- Chapter 2 -->
+        <div class="col-lg-7 col-11">
           <hr class="line-divider my-5 py-lg-2" />           
-
+          
           <h3 class="text-h3 font-secondary mb-3">
+            
             How many more bee species to be described over the next 10 years?
           </h3> 
 
@@ -238,9 +266,11 @@
             To delineate biogeographic regions, the WWF Terrestrial Ecoregions of the World for boundaries of the biogeographic realms, excluding Antarctica, was used. Bayesian hierarchical model was used, with the response variable as the number of species described per year by biogeographic realm and was offset by the number of publications to account for taxonomic effort. The model was a zero-inflated autoregressive Poisson regression to account for imperfect detection. The statistical modelling approach is similar to <a href="https://www.pnas.org/content/114/14/3666" target="_blank">this study</a>.
           </p>
 
+          <hr class="line-divider my-5 py-lg-2" />      
+        </div>
 
-          <hr class="line-divider my-5 py-lg-2" />           
-
+        <!-- Chapter 3 Part 1 text 1 -->
+        <div class="col-lg-7 col-11">
           <h3 class="text-h3 font-secondary mb-3">
             Who are the people with bee taxonomic expertise?
           </h3> 
@@ -253,42 +283,109 @@
             However, most bee describers come from Europe and North America as well as high income countries and few come from Africa (17), Oceania (2) and Australia (14). It is a known trend also for other taxa, such as the <a href="https://academic.oup.com/bioscience/article/60/10/798/231551" target="_blank">amphibians</a>. This potentially poses as a problem; resident describers describe up to 38.7% of the bee species in their country though the median percentage is 1.9%. Countries without resident describers may not be able adequately discover or inventory the bee biodiversity within the country, which is important for conservation and biodiversity policies.
           </p>
           
-          <div class="flourish-embed flourish-heatmap" data-src="visualisation/6307242"></div>
+          <div class="flourish-embed flourish-heatmap mb-5" data-src="visualisation/6307242"></div>
                    
-          
-          <p class="text-body-2 mb-3">
-            To investigate this, a model with factors determining the presence of taxonomic flow between countries was used. Factors as history, geographic proximity, socioeconomic status were significant. There is however is an asymmetry in flow: Asia, Africa and Oceania were not as likely to receive taxonomic flow from countries in continents with these taxonomic resources, namely Europe and North America. This suggests that more taxonomic flow, when in line with the Nagoya protocol, as well as local capacity building in these regions should be encouraged.
-          </p>
+        </div>
+
+        <!-- Chapter 3 Part 1 globe map -->
+        <div class="col-lg-12 col-11 mb-5">
 
           <div class="flourish-embed flourish-globe" data-src="visualisation/6307626"></div>
+          <p class="text-caption">
+          To investigate this, a model with factors determining the presence of taxonomic flow between countries was used. 
+          </p>
+     
+        </div>
+        
+        <!-- Chapter 3 Part 1 text 2 -->
+        <div class="col-lg-7 col-11">
+          <p class="text-body-2 mb-5">
+            Factors as history, geographic proximity, socioeconomic status were significant. There is however is an asymmetry in flow: Asia, Africa and Oceania were not as likely to receive taxonomic flow from countries in continents with these taxonomic resources, namely Europe and North America. This suggests that more taxonomic flow, when in line with the Nagoya protocol, as well as local capacity building in these regions should be encouraged.
+          </p>
+
           <div class="flourish-embed flourish-table" data-src="visualisation/6307724"></div>
           <p class="text-caption mb-5 text-center">
           † Intercept refers to the baseline of different continent, not colonised, not adjacent, flow class type equal, and continent of donor country Africa and continent of recipient country Africa.
           </p>
 
           <hr class="line-divider my-5 py-lg-1" />           
+        </div>
 
-          <p class="text-body-2 mb-3">
-            Collaboration is key in scientific research. There is an increasing trend of bee co-authorship through time though only 5.9% of described species have co-authors. One of the ways to determine the extent of collaboration may be seen in co-authorship networks <a href="https://www.pnas.org/content/101/suppl_1/5200" taret="_blank">here</a> and <a href="https://health-policy-systems.biomedcentral.com/articles/10.1186/s12961-016-0104-5" target="_blank">here</a>. The bee describer co-authorship network is constructed here. Most describers are interconnected: majority of describers are in one international main network with a few large international modules and smaller modules structured by geography. This suggests that for describers who co-author, the bee network is generally well-connected and international.
+        <!-- Chapter 3 Part 2 -->
+        <div class="col-lg-7 col-11">
+          <p class="text-body-2 mb-5">
+            Collaboration is key in scientific research. There is an increasing trend of bee co-authorship through time though only 5.9% of described species have co-authors. One of the ways to determine the extent of collaboration may be seen in co-authorship networks <a href="https://www.pnas.org/content/101/suppl_1/5200" taret="_blank">here</a> and <a href="https://health-policy-systems.biomedcentral.com/articles/10.1186/s12961-016-0104-5" target="_blank">here</a>.
           </p>
-          <p class="text-body-2 mb-3">
-            The peripheral networks (outside of the main network) may be present for historical reasons due to the lack of telecommunications and travel in the past, cultural reasons (e.g., Indian describers form many isolated networks) or may also be new research groups which have yet to collaborate with the main network. 
-          </p>
-          <div class="flourish-embed flourish-network" data-src="visualisation/6307843"></div>
+        </div>
+
+        <div class="col-lg-12 col-11 container-fluid mb-5">
+          <div class="row justify-content-center" id="scrolly__section">
+
+            <div class="col-6 scrolly__content">
+
+              <div class="step" data-step="1">
+                <div class="text-block pa-2">
+                  <p class="text-caption">
+                    The bee describer co-authorship network is constructed here. Most describers are interconnected: majority of describers are in one international main network with a few large international modules and smaller modules structured by geography. This suggests that for describers who co-author, the bee network is generally well-connected and international.
+                  </p>
+                </div>
+              </div>
+              <div class="step" data-step="2">
+                <div class="text-block pa-2">
+                  <p class="text-caption">
+                    The peripheral networks (outside of the main network) may be present for historical reasons due to the lack of telecommunications and travel in the past, cultural reasons (e.g., Indian describers form many isolated networks) or may also be new research groups which have yet to collaborate with the main network.
+                  </p>
+                  <p class="text-caption">You can explore the network on your own by clicking on the legend and may notice some trends! Two notable taxonomists are highlighted below.</p>
+                </div>
+              </div>
+
+              <div class="step" data-step="3">
+                <div class="text-block pa-2">
+                  <p class="text-body-2">Jesus Santiago Moure</p>
+                  <p class="text-caption">
+                    Jesus Santiago Moure (2 Nov 1912 to 10 Jul 2010) was a Brazilian taxonomist specialising in bees. He worked largely with Brazilian taxonomists, and some from United States. He studied in a seminary at Rio Claro from 1929 to 1932. From 1933 to 1936, he received his degree in theology in Curitiba, during which his interest in insects began. Source: <a href="https://www.scielo.br/j/rbent/a/R7DSynRZ5d5bRznDKdKhdNf/?lang=en" target="_blank">here</a>
+                  </p>
+                </div>            
+              </div>
+
+              <div class="step" data-step="4">
+                <div class="text-block pa-2">
+                  <p class="text-body-2">Charles Duncan Michener</p>
+                  <p class="text-caption">
+                    Charles Duncan Michener (22 Sep 1918 to 1 Nov 2015) was an well-connected American bee expert who worked with bee describers from varied countries. He wrote the seminal bee taxonomic guide "The Bees of the World" published in 2000. At the age of 16, he wrote his first peer-reviewed publication. Later, he received his bachelors in 1939 and his PhD in entomology in 1941 from the University of California, Berkeley. Source: <a href="https://www.scielo.br/j/rbent/a/R7DSynRZ5d5bRznDKdKhdNf/?lang=en" target="_blank">here</a>
+                  </p>
+                </div>            
+              </div>
+
+            </div>
+
+            <div class="col-6 scrolly__chart">
+              <div class="scrolly__chart mt-3">
+                <iframe style="height: 400px" class="flourish-iframe" scrolling="no" src="https://flo.uri.sh/story/878218/embed#slide-0"></iframe>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        
+        <div class="col-lg-7 col-11">
+
           <p class="text-body-2 mb-5">
             Together these suggest that there is more avenue for collaboration through co-authorship for bee taxonomists, and for those who co-author, the modern world has allowed for collaboration that transcends boundaries. 
           </p>
           
           <hr class="line-divider my-5 py-lg-1" />           
+        </div>
 
-
+        <!-- Chapter 3 Part 3 -->
+        <div class="col-lg-7 col-11">
           <p class="text-body-2 mb-3">
             Finally, gender representation is a frequently discussed issue in the 21st century. Thus, the percentage of active female describers over time was explored. The graph shows increasing female representation with time but is not near parity and hovered around 20% in the 21st century. When extrapolated, parity is expected to be reached in the year 2132. The percentage of publications authored by females in most <a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2004956" target="_blank">other STEM disciplines </a>are also not likely to reach parity by the end of this century.
           </p>
 
-
           <img src="img/bee/ch3-fig-05-data.png" alt="placeholder" width=100% class="mb-5 py-2" />          
-
 
           <p class="blockquote font-secondary ">Methods</p>
 
@@ -308,9 +405,10 @@
           The percentage of active female describers over time were tabulated. To model the year in which parity would be reached, a logistic function was fitted to the proportion of active female describers by year. Methods were similar to this study <a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2004956" target="_blank">here</a>.
           </p>
 
+        </div>
 
-          
-         
+        <!-- The end -->
+        <div class="col-lg-7 col-11">
           <p class="blockquote font-secondary ">
             The end
           </p> <br>
@@ -322,18 +420,94 @@
 
           </p>
 
-          <img src="img/bee/header.png" alt="placeholder" width=100% class="mb-5 py-2" />        
-
-          
-
+          <img src="img/bee/header.png" alt="end" width=100%/>        
         </div>
+
       </div>
     </div>
   </div>
 
+
+
+  <!-- This code from here on is derived from the side-by-side code example from the scrollama library which can be found here: https://github.com/russellgoldenberg/scrollama  -->
+  <!-- I tweaked the function for handleStepEnter to accomodate the Flourish story! -->
+
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+  <script src="https://unpkg.com/intersection-observer"></script>
+  <script src="https://unpkg.com/scrollama"></script>
   <script src="https://public.flourish.studio/resources/embed.js"></script>
+
+  <script>
+    var scrolly = d3.select("#scrolly__section");
+    var chart = scrolly.select(".scrolly__chart");
+    var content = scrolly.select(".scrolly__content");
+    var step = content.selectAll(".step");
+
+    // initialize the scrollama
+    var scroller = scrollama();
+
+    // generic window resize listener event
+    function handleResize() {
+      // 1. update height of step elements
+      var stepH = Math.floor(window.innerHeight * 1);
+      step.style("height", stepH + "px");
+
+      var figureHeight = window.innerHeight * 0.75;
+      var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+      chart
+        .style("height", figureHeight + "px")
+        .style("top", figureMarginTop + "px");
+
+      // 3. tell scrollama to update new element dimensions
+      scroller.resize();
+    }
+
+    // scrollama event handlers
+    function handleStepEnter(response) {
+      const textblock = step.select(".text-block");
+
+      // add color to current step only
+      textblock.classed("is-active", function(d, i) {
+        return i === response.index;
+      });
+
+      // update graphic based on step
+      const linkHead = 'https://flo.uri.sh/story/878218/embed#slide-'
+      const slide = response.index
+
+      d3.select('.scrolly__chart iframe')
+        .attr('src', linkHead + slide);
+    }
+
+    function setupStickyfill() {
+      d3.selectAll(".sticky").each(function() {
+        Stickyfill.add(this);
+      });
+    }
+
+    function init() {
+      setupStickyfill();
+      handleResize();
+      scroller
+        .setup({
+          step: "#scrolly__section .scrolly__content .step",
+          offset: 0.5,
+          // debug: true
+        })
+        .onStepEnter(handleStepEnter);
+
+      // setup resize event
+      window.addEventListener("resize", handleResize);
+    }
+
+    init();
+  </script>    
+
+
 </body>
 </html>

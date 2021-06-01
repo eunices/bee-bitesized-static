@@ -1,0 +1,341 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Data story with flourish</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="how-to-make-a-story">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #1d1d1d;
+    }
+
+    .wrapper {
+      padding: 96px 0;
+    }
+
+    .font-secondary {
+      font-family: 'Lora', serif !important;
+    }
+
+    .text-h1 {
+      font-size: 36px;
+      line-height: 52px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 32px;
+        line-height: 48px;
+      }
+    }
+
+    .text-h2 {
+      font-size: 32px;
+      line-height: 36px;
+      font-weight: 500;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+
+    .text-body-1 {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    .text-body-2 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    .blockquote {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 36px;
+      text-transform: uppercase;
+      text-align: center;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 28px;
+      }  
+    }
+
+    .text-caption {
+      font-size: 14px;
+      line-height: 22px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 12px;
+        line-height: 18px; 
+      }
+    }
+
+    a {
+      color: #104E8B !important;
+      border-bottom: 2px solid #104E8B;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    /* @media (min-width: @screen-sm-min) { ... } */
+
+    /* Medium devices (desktops, 992px and up) */
+    /* @media (min-width: @screen-md-min) { ... } */
+
+    /* Large devices (large desktops, 1200px and up) */
+    /* @media (min-width: @screen-lg-min) { ... } */
+
+    #scrolly__section {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      /* background-color: #f3f3f3; */
+      padding: 1rem;
+    }
+
+    #scrolly__section > * {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+    }
+
+    .scrolly__content {
+      position: relative;
+      padding: 0 1rem;
+      width: 100%;
+    }
+
+    .scrolly__chart {
+      position: -webkit-sticky;
+      position: sticky;
+      width: 100%;
+      margin: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      z-index: 0;
+    }
+
+    .scrolly__chart iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    .step {
+      margin: 0 auto 2rem auto;
+      border: 2px solid #104E8B;
+      display: flex;
+      justify-content: center;
+      align-items: start;      
+    }
+
+    .step:last-child {
+      margin-bottom: 0;
+    }
+
+    .text-block.is-active {
+      background-color: goldenrod;
+      color: #3b3b3b;
+    }
+
+    .text-block {
+      background-color: salmon;
+    }
+
+    .step p {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    iframe {
+      border: unset;
+    }
+    
+  </style>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-11">
+            <p class="text-body-2 mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem iusto, vel, cum est architecto odit quia culpa sed ex ipsa praesentium alias ullam tempore numquam aliquid aspernatur, provident nesciunt!
+            </p>
+
+            <img src="https://picsum.photos/640/280" alt="placeholder" width=100% class="mb-5 py-2" />          
+
+            <h3 class="text-h2 font-secondary mb-3">subtitle here</h3>  
+
+            <div class="flourish-embed flourish-chart mt-3" data-src="visualisation/6262784">
+            </div>
+            <p class="text-caption mb-5 text-center">caption: here is a flourish chart and I basically plonked this in here exactly like how I get from the embed instructions</p>            
+
+            <p class="text-body-1 mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aut, cum reprehenderit obcaecati minima eius aperiam dolorem laboriosam ullam facere eaque earum voluptatibus, doloremque officiis quibusdam quae impedit ipsa sunt.
+            </p> 
+
+            <hr class="line-divider my-5 py-lg-2" />
+
+            <p class="blockquote font-secondary ">
+              “Block quote example”
+            </p>
+
+            <hr class="line-divider my-5 py-lg-2" />           
+
+            <p class="text-body-1 mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam architecto obcaecati alias delectus, illo non nam ad, accusamus magnam <em>italics here</em> <a href="" target="_blank">random link here</a> ipsa accusantium ratione praesentium dolores nesciunt ab officia quisquam excepturi sunt?
+            </p>
+
+            <img src="https://picsum.photos/640/280" alt="placeholder" width=100% class="mb-5 py-2" />
+
+            <h3 class="text-h2 font-secondary mb-3">subtitle here</h3>
+
+            <p class="text-body-1 mb-4">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dolor, quos aut repellendus quia porro temporibus magni unde, rerum quasi aperiam, eligendi ducimus aliquam fugiat quas autem labore id consectetur.
+            </p>         
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="root">
+        <div class="row justify-content-center" id="scrolly__section">
+          <div class="col-4 scrolly__content">
+            <div class="step" data-step="1">
+              <div class="text-block pa-2">
+                <p class="text-body-2">lorem 1</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis modi labore unde commodi, dolorem ut enim, necessitatibus odit facere et pariatur minus! Aliquam rem earum tempore accusamus corporis similique.</p>
+              </div>
+            </div>
+            <div class="step" data-step="2">
+              <div class="text-block pa-2">
+                <p class="text-body-2">lorem 2</p>
+                <p class="text-body-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis modi labore unde commodi, dolorem ut enim, necessitatibus odit facere et pariatur minus! Aliquam rem earum tempore accusamus corporis similique.</p>
+              </div>            
+            </div>
+            <div class="step" data-step="3">
+              <div class="text-block pa-2">
+                <p class="text-body-2">lorem 3</p>
+                <p class="text-body-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis modi labore unde commodi, dolorem ut enim, necessitatibus odit facere et pariatur minus! Aliquam rem earum tempore accusamus corporis similique.</p>
+              </div>            
+            </div>
+            <div class="step" data-step="4">
+              <div class="text-block pa-2">
+                <p class="text-body-2">lorem 4</p>
+                <p class="text-body-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis modi labore unde commodi, dolorem ut enim, necessitatibus odit facere et pariatur minus! Aliquam rem earum tempore accusamus corporis similique.</p>
+              </div>            
+            </div>
+          </div>
+
+          <div class="col-6 scrolly__chart">
+            <iframe scrolling="no" src="https://flo.uri.sh/story/872914/embed#slide-0"></iframe>
+          </div>
+        </div>        
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>    
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    
+
+    <!-- This code from here on is derived from the side-by-side code example from the scrollama library which can be found here: https://github.com/russellgoldenberg/scrollama  -->
+    <!-- I tweaked the function for handleStepEnter to accomodate the Flourish story! -->
+
+    <script>
+      var scrolly = d3.select("#scrolly__section");
+      var chart = scrolly.select(".scrolly__chart");
+      var content = scrolly.select(".scrolly__content");
+      var step = content.selectAll(".step");
+    
+      // initialize the scrollama
+      var scroller = scrollama();
+    
+      // generic window resize listener event
+      function handleResize() {
+        // 1. update height of step elements
+        var stepH = Math.floor(window.innerHeight * 1);
+        step.style("height", stepH + "px");
+    
+        var figureHeight = window.innerHeight * 0.75;
+        var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+    
+        chart
+          .style("height", figureHeight + "px")
+          .style("top", figureMarginTop + "px");
+    
+        // 3. tell scrollama to update new element dimensions
+        scroller.resize();
+      }
+    
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        console.log("RESPONSE", response);
+        const textblock = step.select(".text-block");
+
+        // add color to current step only
+        textblock.classed("is-active", function(d, i) {
+          return i === response.index;
+        });
+    
+        // update graphic based on step
+        const linkHead = 'https://flo.uri.sh/story/872914/embed#slide-'
+        const slide = response.index
+
+        d3.select('.scrolly__chart iframe')
+          .attr('src', linkHead + slide);
+      }
+    
+      function setupStickyfill() {
+        d3.selectAll(".sticky").each(function() {
+          Stickyfill.add(this);
+        });
+      }
+    
+      function init() {
+        setupStickyfill();
+        handleResize();
+        scroller
+          .setup({
+            step: "#scrolly__section .scrolly__content .step",
+            offset: 0.7,
+            debug: true, 
+            progress: true
+          })
+          .onStepEnter(handleStepEnter);
+    
+        // setup resize event
+        window.addEventListener("resize", handleResize);
+      }
+    
+      init();
+    </script>    
+  </body>
+</html>
