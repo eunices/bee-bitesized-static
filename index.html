@@ -484,14 +484,7 @@
         .attr('src', linkHead + slide);
     }
 
-    function setupStickyfill() {
-      d3.selectAll(".sticky").each(function() {
-        Stickyfill.add(this);
-      });
-    }
-
     function init() {
-      setupStickyfill();
       handleResize();
       scroller
         .setup({
